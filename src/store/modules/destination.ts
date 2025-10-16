@@ -49,6 +49,10 @@ export const useDestinationStore = defineStore("destination", {
 
       return filtered;
     },
+    
+    getDestinationById: (state) => {
+      return (id: string) => state.destinations.find((d) => d.id === id);
+    },
   },
 
   actions: {
