@@ -21,6 +21,7 @@
 <script setup lang="ts">
 const menuItems = [
   { name: '首页', path: '/' },
-  { name: '预订', path: '/booking' }
+  { name: '预订', path: '/booking' },
+  { name: '关于我们', path: '/about' }
 ]
 </script>
