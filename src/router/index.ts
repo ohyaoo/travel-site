@@ -5,11 +5,13 @@ import {
 } from "vue-router";
 import HomePage from "@/views/HomePage.vue";
 import BookingPage from "@/views/BookingPage.vue";
+import AboutPage from "@/views/AboutPage.vue";
 import NotFound from "@/views/NotFound.vue";
 
 const routes: RouteRecordRaw[] = [
   { path: "/", name: "home", component: HomePage },
   { path: "/booking", name: "booking", component: BookingPage },
+  { path: "/about", name: "about", component: AboutPage },
   { path: "/:pathMatch(.*)*", name: "not-found", component: NotFound },
 ];
 
