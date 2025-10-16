@@ -10,6 +10,7 @@ import NotFound from "@/views/NotFound.vue";
 
 const routes: RouteRecordRaw[] = [
   { path: "/", name: "home", component: HomePage },
+  { path: "/destination/:id", name: "destination-detail", component: DestinationDetailPage },
   { path: "/booking", name: "booking", component: BookingPage },
   { path: "/about", name: "about", component: AboutPage },
   { path: "/:pathMatch(.*)*", name: "not-found", component: NotFound },
