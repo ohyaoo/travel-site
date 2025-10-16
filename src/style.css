@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-blue: #1e88e5;
+    --primary-green: #43a047;
+    --secondary-blue: #64b5f6;
+    --secondary-green: #81c784;
+    --bg-light: #f5f9ff;
+    --bg-dark: #1a237e;
+    --text-primary: #2c3e50;
+    --text-secondary: #607d8b;
+  }
+  body {
+    @apply bg-bg-light text-text-primary font-primary antialiased;
+  }
+  a {
+    @apply text-primary-blue hover:text-secondary-blue transition-colors;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-blue text-white px-4 py-2 rounded-lg hover:bg-secondary-blue transition-colors disabled:opacity-60 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply bg-primary-green text-white px-4 py-2 rounded-lg hover:bg-secondary-green transition-colors;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition-shadow;
+  }
+  .badge {
+    @apply inline-block px-2 py-0.5 text-xs rounded bg-secondary-blue text-white;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-blue to-primary-green;
+  }
+}
